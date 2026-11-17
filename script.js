@@ -5,6 +5,10 @@
 /* ===== Supabase connection ===== */
 const SUPABASE_URL = 'https://gvrtyixxtmsaryrphxhu.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_uM3M9u329B9AjYI-K2eVrg_rQ90pObS';
+const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_PUBLISHABLE_KEY
+);
 const IMAGE_BUCKET = 'product-images';
 
 /* Tiny PostgREST client (no library needed). path is relative to /rest/v1/ */
